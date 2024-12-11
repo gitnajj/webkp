@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almahyra Sukses Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- HEADER SECTION -->
+<header>
+    <!-- KONTAK INFORMASI -->
+    <div class="header">
+        <a href="mailto:almahyrasuksesgroup.com"><i class="fas fa-envelope"></i>almahyrasuksesgroup.com</a>
+        <span class="divider">|</span>
+        <a href="https://wa.me/081333803960" target="_blank"><i class="fas fa-phone"></i>081333803960</a>
+        <span class="divider">|</span>
+        <a><i class="fas fa-clock"></i>Mon - Fri : 08.30 - 17.30</a>
+    </div>
+    
+<!-- NAVIGASI MENU -->
+<div class="navbar">
+    <div class="navbar-logo">
+        <img src="/images/logo_ASG.png" alt="Company Logo">
+        <span class="company-name">ALMAHYRA SUKSES GROUP</span>
+    </div>
+    <nav class="navbar-menu">
+       <!-- Hamburger Icon for Mobile -->
+       <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#footer">Tentang</a></li> <!-- Menu Tentang diarahkan ke Footer -->
+            <li><a href="#footer">Kontak</a></li> <!-- Menu Kontak diarahkan ke Footer -->
+        </ul>
+    </nav>
+</div>
+
+
+    <!-- BAGIAN BANNER -->
+    <section class="banner">
+        <div class="overlay">
+            <h1>ALMAHYRA SUKSES GROUP</h1>
+            <p>Biro Jasa Account and Management Tax Advisory Service</p>
+            <a href="https://wa.me/6281333803960" target="_blank" class="button">Hubungi Sekarang</a>
+        </div>
+    </section>
+
+<!-- SECTION BERANDA -->
+<body>
+    <section class="about-section" id="beranda"> <!-- Tambahkan id="beranda" di sini -->
+        <div class="about-left">
+            <h2>Kami ada<br>di sini<br>untuk membantu</h2>
+        </div>
+        <div class="about-right">
+            <p>Ratusan pembaruan dan aturan-aturan baru setiap tahun keluar di Indonesia. Dengan enam jenis dasar hukum dan ratusan regulasi di dalamnya, Indonesia telah menjadi salah satu negara yang paling tidak ramah bagi wajib pajak. Dengan pergeseran kondisi ekonomi setiap hari, anda masih perlu mengantisipasi tiga hal yang tidak menyenangkan berikut ini:</p>
+            <ul>
+                <li>Waktu yang dihabiskan untuk administrasi pajak yang kompleks</li>
+                <li>Penalti-penalti pajak</li>
+                <li>Terus mengikuti regulasi-regulasi baru setiap hari</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+<!-- SECTION CONTAINER -->
+<div class="container">
+    <div class="title">Kami bisa membantu anda <span>hanya</span> dengan 5 langkah sederhana!</div>
+    <div class="steps">
+        <div class="step">
+            <div class="step-number">01.</div>
+            <div class="step-description">Hubungi Kami</div>
+        </div>
+        <div class="step">
+            <div class="step-number">02.</div>
+            <div class="step-description">Kami menunjuk konsultan pajak pribadi untuk anda</div>
+        </div>
+        <div class="step">
+            <div class="step-number">03.</div>
+            <div class="step-description">Kami mempersiapkan Surat Pemberitahuan (SPT) anda</div>
+        </div>
+        <div class="step">
+            <div class="step-number">04.</div>
+            <div class="step-description">Meriview dan membayar pajak anda</div>
+        </div>
+        <div class="step">
+            <div class="step-number">05.</div>
+            <div class="step-description">Kami membantu melaporkan SPT anda</div>
+        </div>
+    </div>
+</div>
+
+<div class="container-background">
+    <div class="container">
+        <div class="services-title"><span>Layanan Kami</span></div>
+    </div>
+</div>
+
+<!-- LAYANAN SECTION -->
+    <section id="layanan" class="layanan-section">
+        <div class="layanan-grid">
+            
+            <div class="layanan-item" id="JasaAdministrasiPajak" onclick="showPopup('Jasa Administrasi pajak', 'Membantu perusahaan dalam pengajuan terkait pemenuhan administrasi perpajakan.')">
+                <img src="/images/service1.jpg" alt="Jasa Administrasi pajak">
+                <p>Jasa Administrasi pajak</p>
+            </div>
+            <div class="layanan-item" id="JasaKonsultasiPajak" onclick="showPopup('Jasa Konsultasi Pajak', 'Memberikan konsultasi rutin dan khusus terkait permasalahan perpajakan.')">
+                <img src="/images/service2.png" alt="Jasa Konsultasi Pajak">
+                <p>Jasa Konsultasi Pajak</p>
+            </div>
+            <div class="layanan-item" id="JasaKepatuhanPerpajakan" onclick="showPopup('Jasa Kepatuhan Perpajakan', 'Membantu perusahaan atau individu dalam pemenuhan kewajiban pajak, termasuk menghitung, menyetorkan, dan melaporkan pajak.')">
+                <img src="/images/service3.png" alt="Jasa Kepatuhan Perpajakan">
+                <p>Jasa Kepatuhan Perpajakan</p>
+            </div>
+            <div class="layanan-item" id="Penyusunan SPT Tahunan" onclick="showPopup('Penyusunan SPT Tahunan', 'Membantu penyusunan SPT Tahunan PPh Badan atau Pribadi sesuai laporan keuangan.')">
+                <img src="/images/service4.jpg" alt="Penyusunan SPT Tahunan">
+                <p>Penyusunan SPT Tahunan</p>
+            </div>
+            <div class="layanan-item" id="JasaPerencanaanPerpajakan" onclick="showPopup('Jasa Perencanaan Perpajakan', 'Menyusun rencana perpajakan untuk efisiensi pajak perusahaan atau perseorangan.')">
+                <img src="/images/service5.jpg" alt="Jasa Perencanaan Perpajakan">
+                <p>Jasa Perencanaan Perpajakan</p>
+            </div>
+            <div class="layanan-item" id="JasaPendampinganPerpajakan" onclick="showPopup('Jasa Pendampingan Perpajakan ', 'Mendampingi dalam proses pemeriksaan, keberatan, restitusi, dan banding perpajakan.')">
+                <img src="/images/service6.png" alt="Jasa Pendampingan Perpajakan">
+                <p>Jasa Pendampingan Perpajakan</p>
+            </div>
+            <div class="layanan-item" id="JasaPembukuan" onclick="showPopup('Jasa Pembukuan', 'Menyusun pembukuan dan laporan keuangan untuk pengambilan keputusan terkait pajak.')">
+                <img src="/images/service7.png" alt="Jasa Pembukuan">
+                <p>Jasa Pembukuan</p>
+            </div>
+            <div class="layanan-item" id="JasaKompilasi" onclick="showPopup('Jasa Kompilasi', 'Menyusun laporan keuangan berkala sesuai ketentuan perpajakan.')">
+                <img src="/images/service8.png" alt="Jasa Kompilasi">
+                <p>Jasa Kompilasi</p>
+            </div>
+            <div class="layanan-item" id="JasaPelatihanPerpajakan" onclick="showPopup('Jasa Pelatihan Perpajakan', 'Pelatihan perpajakan untuk meningkatkan pengetahuan karyawan sesuai kebutuhan industri.')">
+                <img src="/images/service9.png" alt="Jasa Pelatihan Perpajakan">
+                <p>Jasa Pelatihan Perpajakan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP LAYANAN -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3 id="popup-title">Popup Title</h3>
+            <p id="popup-text">Popup text...</p>
+        </div>
+    </div>
+    
+    <!-- SCRIPT JS -->
+    <script src="script.js"></script>
+
+<!--SECTION VISI MISI -->
+        <section class="visi-misi-section">
+            <div class="visi-misi-container">
+                <div class="text-container">
+                    <h2>Visi dan Misi</h2>
+                    <div class="visi">
+                        <h3>Visi</h3>
+                        <p>Menjadi konsultan pajak terkemuka yang diakui atas keandalan dan inovasi dalam membantu klien mengelola kewajiban perpajakan.</p>
+                    </div>
+                    <div class="misi">
+                        <h3>Misi</h3>
+                        <div class="misi-item">
+                            <p>&#8594; <strong>Layanan Berkualitas:</strong> Konsultasi pajak akurat dan transparan.</p>
+                        </div>
+                        <div class="misi-item">
+                            <p>&#8594; <strong>Pendekatan Personal:</strong> Hubungan jangka panjang.</p>
+                        </div>
+                        <div class="misi-item">
+                            <p>&#8594; <strong>Inovasi:</strong> Mengadopsi metode dan teknologi baru.</p>
+                        </div>
+                        <div class="misi-item">
+                            <p>&#8594; <strong>Integritas:</strong> Menjunjung tinggi standar etika.</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+<!-- FOOTER SECTION -->
+<footer id="footer"> <!-- Tambahkan id="footer" di sini -->
+    <div class="footer-container">
+        <!-- LOGO AND CONTACT INFO -->
+        <div class="footer-section">
+            <img src="/images/logo_ASG.png" alt="ALMAHYRA SUKSES GROUP Logo">
+            <h2>ALMAHYRA SUKSES GROUP</h2>
+            <p>Biro Jasa Management and Tax Advisory Service</p>
+            <p><a href="https://maps.app.goo.gl/UekwudcLGPhQn1iw8" target="_blank">Alamat</a></p>
+            <p><a href="mailto:info@almahyrasuksesgroup.com">Email</a></p>
+            <p><a href="https://instagram.com/almahyra_sukses_group" target="_blank">Instagram</a></p>
+            <p><a href="tel:+6281333803960">Whatsapp</a></p>
+        </div>
+
+        <!-- TENTANG KAMI SECTION -->
+        <div class="footer-section">
+            <h3>TENTANG KAMI</h3>
+            <p>Almahyra Sukses Group dikelola oleh Praktisi yang memiliki izin sebagai Konsultan Pajak serta izin sebagai Kuasa Hukum dan berusaha memberikan pelayanan terbaik.</p>
+        </div>
+
+        <!-- MENU SECTION -->
+        <div class="footer-section">
+            <h3>MENU</h3>
+            <p><a href="#beranda">Beranda</a></p>
+            <p><a href="#layanan">Layanan</a></p>
+            <p><a href="#tentangKami">Tentang Kami</a></p>
+            <p><a href="#kontakKami">Kontak Kami</a></p>
+        </div>
+    </div>
+
+    <!-- COPY RIGHT -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 ALMAHYRA SUKSES GROUP | All Rights Reserved</p>
+    </div>
+</footer>
+
+    <!-- POPUP -->
+    <div id="popup" class="popup" onclick="hidePopup()">
+        <div class="popup-content" onclick="event.stopPropagation()">
+            <h2 id="popup-title">Title</h2>
+            <p id="popup-info">Informasi tambahan di sini</p>
+        </div>
+    </div>
+
+    <!-- SCRIPT JS LAGI -->
+    <script src="script.js"></script>
+
+</body>
+</html>
